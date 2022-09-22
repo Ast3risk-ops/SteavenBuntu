@@ -1,6 +1,12 @@
 #!/bin/bash
 sudo apt purge snapd -y
 sudo apt purge vim -y
+sudo rm -rf /etc/apt/preferences.d/nosnap.pref
+sudo rm -rf /etc/apt/preferences.d/nonautilus.pref
+sudo rm -rf /etc/apt/preferences.d/nolibreoffice.pref
+sudo rm -rf /etc/apt/preferences.d/nogdm.pref
+sudo rm -rf /etc/netplan/01-network-manager-all.yaml
+sudo rm -rf /etc/os-release
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nosnap.pref -P /etc/apt/preferences.d/
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nonautilus.pref -P /etc/apt/preferences.d/
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nolibreoffice.pref -P /etc/apt/preferences.d/
@@ -13,9 +19,9 @@ sudo apt upgrade -y
 yes | sudo apt-get install xorg xterm menu gksu synaptic --no-install-recommends
 yes | sudo apt-get install gnome-session gnome-panel metacity gnome-terminal --no-install-recommends
 yes | sudo apt install gnome-shell-extension-dash-to-panel gnome-shell-extension-desktop-icons gnome-shell-extension-gamemode nemo xinit git wget papirus-icon-theme firefox gnome-shell-extension-top-icons-plus gedit
-sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-gnome-shell-theme_5.3.1_all.deb -O ~/pop-shell-theme.deb
-sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-gtk-theme_5.3.1_all.deb -O ~/pop-gtk-theme.deb
-sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-sound-theme_5.3.1_all.deb -O ~/pop-sound-theme.deb
+wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-gnome-shell-theme_5.3.1_all.deb -O ~/pop-shell-theme.deb
+wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-gtk-theme_5.3.1_all.deb -O ~/pop-gtk-theme.deb
+wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-sound-theme_5.3.1_all.deb -O ~/pop-sound-theme.deb
 sudo dpkg --force-all -i ~/pop-shell-theme.deb
 sudo dpkg --force-all -i ~/pop-gtk-theme.deb
 sudo dpkg --force-all -i ~/pop-sound-theme.deb
