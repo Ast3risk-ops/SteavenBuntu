@@ -8,10 +8,9 @@ sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/01-network-man
 sudo add-apt-repository ppa:papirus/papirus -y
 sudo apt update
 sudo apt upgrade -y
-sudo apt-get install xorg xterm menu gksu synaptic --no-install-recommends -y
-sudo apt-get install gnome-session gnome-panel metacity gnome-terminal --no-install-recommends -y
-sudo apt install gnome-shell-extension-dash-to-panel gnome-shell-extension-desktop-icons gnome-shell-extension-gamemode -y
-sudo apt install nemo lightdm lightdm-settings git wget papirus-icon-theme -y
+yes | sudo apt-get install xorg xterm menu gksu synaptic --no-install-recommends
+yes | sudo apt-get install gnome-session gnome-panel metacity gnome-terminal --no-install-recommends
+yes | sudo apt install gnome-shell-extension-dash-to-panel gnome-shell-extension-desktop-icons gnome-shell-extension-gamemode nemo lightdm lightdm-settings git wget papirus-icon-theme firefox gnome-shell-extension-top-icons-plus
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-gnome-shell-theme_5.3.1_all.deb -O ~/pop-shell-theme.deb
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-gtk-theme_5.3.1_all.deb -O ~/pop-gtk-theme.deb
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-sound-theme_5.3.1_all.deb -O ~/pop-sound-theme.deb
@@ -25,3 +24,5 @@ gsettings set org.gnome.desktop.wm.preferences theme Pop
 gsettings set org.gnome.desktop.interface icon-theme Papirus-Light
 gnome-extensions enable dash-to-panel@jderose9.github.com
 gnome-extensions enable desktop-icons@csoriano
+gnome-extensions enable gamemode@christian.kellner.me
+gnome-extensions enable TopIcons@phocean.net
