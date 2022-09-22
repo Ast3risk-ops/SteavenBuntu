@@ -8,7 +8,7 @@ sudo rm -rf /etc/apt/preferences.d/nogdm.pref
 sudo rm -rf /etc/netplan/01-network-manager-all.yaml
 sudo rm -rf /etc/os-release
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nosnap.pref -P /etc/apt/preferences.d/
-sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nonautilus.pref -P /etc/apt/preferences.d/
+#sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nonautilus.pref -P /etc/apt/preferences.d/
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nolibreoffice.pref -P /etc/apt/preferences.d/
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nogdm.pref -P /etc/apt/preferences.d/
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/01-network-manager-all.yaml -P /etc/netplan/
