@@ -3,6 +3,8 @@ sudo apt purge snapd -y
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nosnap.pref -P /etc/apt/preferences.d/nosnap.pref
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nonautilus.pref -P /etc/apt/preferences.d/nonautilus.pref
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nolibreoffice.pref -P /etc/apt/preferences.d/nolibreoffice.pref
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nogdm.pref -P /etc/apt/preferences.d/nogdm.pref
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/01-network-manager-all.yaml -P /etc/netplan/01-network-manager-all.yaml
 sudo add-apt-repository ppa:papirus/papirus -y
 sudo apt update
 sudo apt upgrade -y

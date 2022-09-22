@@ -1,0 +1,4 @@
+Package: gdm3
+Pin: release a=*
+Pin-Priority: -10
+EOF
