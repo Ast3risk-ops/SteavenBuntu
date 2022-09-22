@@ -17,3 +17,4 @@ sudo dpkg --force-all -i ~/pop-sound-theme.deb
 sudo apt install -f -y
 gsettings set org.gnome.desktop.interface gtk-theme Pop
 gsettings set org.gnome.desktop.wm.preferences theme Pop
+gsettings set org.gnome.desktop.interface icon-theme Papirus-Light
