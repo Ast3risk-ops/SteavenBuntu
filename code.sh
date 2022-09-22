@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo apt purge snapd -y
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nosnap.pref -o /etc/apt/preferences.d/nosnap.pref
 sudo apt update
 sudo apt upgrade -y
 sudo apt install --no-install-recommends gnome -y
