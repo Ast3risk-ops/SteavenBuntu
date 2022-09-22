@@ -1,2 +1,2 @@
 # SteavenBuntu
- SteavenBuntu is the next leval ubuntu distro beasd of ubuntu 20.04
+ SteavenBuntu is a next level Ubuntu distribution based off of Ubuntu 20.04 
