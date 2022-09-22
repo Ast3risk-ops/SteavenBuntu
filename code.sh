@@ -16,8 +16,7 @@ sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/os-release -P 
 sudo add-apt-repository ppa:papirus/papirus -y
 sudo apt update
 sudo apt upgrade -y
-yes | sudo apt-get install xorg xterm menu gksu synaptic --no-install-recommends
-yes | sudo apt-get install gnome-session gnome-panel metacity gnome-terminal --no-install-recommends
+yes | sudo apt-get install xorg xterm menu gksu synaptic gnome-session gnome-panel metacity gnome-terminal gnome-control-center --no-install-recommends
 yes | sudo apt install gnome-shell-extension-dash-to-panel gnome-shell-extension-desktop-icons gnome-shell-extension-gamemode nemo xinit git wget papirus-icon-theme firefox gnome-shell-extension-top-icons-plus gedit
 wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-gnome-shell-theme_5.3.1_all.deb -O ~/pop-shell-theme.deb
 wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-gtk-theme_5.3.1_all.deb -O ~/pop-gtk-theme.deb
