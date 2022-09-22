@@ -1,10 +1,10 @@
 #!/bin/bash
 sudo apt purge snapd -y
 sudo apt purge vim -y
-#sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nosnap.pref -P /etc/apt/preferences.d/
-#sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nonautilus.pref -P /etc/apt/preferences.d/
-#sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nolibreoffice.pref -P /etc/apt/preferences.d/
-#sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nogdm.pref -P /etc/apt/preferences.d/
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nosnap.pref -P /etc/apt/preferences.d/
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nonautilus.pref -P /etc/apt/preferences.d/
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nolibreoffice.pref -P /etc/apt/preferences.d/
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nogdm.pref -P /etc/apt/preferences.d/
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/01-network-manager-all.yaml -P /etc/netplan/
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/os-release -P /etc/
 sudo add-apt-repository ppa:papirus/papirus -y
