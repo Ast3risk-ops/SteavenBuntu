@@ -1,10 +1,14 @@
 #!/bin/bash
 sudo apt purge snapd -y
 sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nosnap.pref -P /etc/apt/preferences.d/nosnap.pref
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nonautilus.pref -P /etc/apt/preferences.d/nonautilus.pref
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/nolibreoffice.pref -P /etc/apt/preferences.d/nolibreoffice.pref
 sudo add-apt-repository ppa:papirus/papirus -y
 sudo apt update
 sudo apt upgrade -y
 sudo apt install --no-install-recommends gnome -y
+sudo apt install gnome-shell-extension-dash-to-panel gnome-shell-extension-desktop-icons gnome-shell-extension-gamemode -y
+sudo apt install nemo -y
 sudo apt install lightdm lightdm-settings -y
 sudo apt install git wget -y
 sudo apt install papirus-icon-theme -y

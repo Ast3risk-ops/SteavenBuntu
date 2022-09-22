@@ -1,0 +1,4 @@
+Package: libreoffice
+Pin: release a=*
+Pin-Priority: -10
+EOF
