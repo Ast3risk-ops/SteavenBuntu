@@ -8,3 +8,10 @@ sudo apt install --no-install-recommends gnome -y
 sudo apt install lightdm lightdm-settings -y
 sudo apt install git wget -y
 sudo apt install papirus-icon-theme -y
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-gnome-shell-theme_5.3.1_all.deb -P ~/pop-shell-theme.deb
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-gtk-theme_5.3.1_all.deb -P ~/pop-gtk-theme.deb
+sudo wget https://github.com/SteavenGamerYT/SteavenBuntu/raw/main/pop-sound-theme_5.3.1_all.deb -P ~/pop-sound-theme.deb
+sudo dpkg --force-all -i ~/pop-shell-theme.deb
+sudo dpkg --force-all -i ~/pop-gtk-theme.deb
+sudo dpkg --force-all -i ~/pop-sound-theme.deb
+sudo apt install -f -y
