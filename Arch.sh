@@ -5,6 +5,7 @@ sudo pacman -Syu --noconfirm --needed base-devel git
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+cd ..
 
 # install gnome and gdm3
 sudo pacman -S --noconfirm --needed gnome gdm
@@ -12,6 +13,10 @@ sudo systemctl enable gdm
 
 # Gnome Extensions
 yay -S --noconfirm --needed gnome-shell-extension-dash-to-dock gnome-shell-extensions gnome-shell-extension-user-theme-x-git extension-manager
+
+# Configs
+wget https://github.com/SteavenGamerYT/Gnome-Customizations/raw/main/Configs/dash-to-dock.txt
+dconf load /org/gnome/shell/extensions/dash-to-dock/ < ~/dash-to-dock.txt
 
 # Gnome Tweaks
 sudo pacman -S --noconfirm --needed gnome-tweaks
