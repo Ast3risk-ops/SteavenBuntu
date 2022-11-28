@@ -6,7 +6,7 @@ sudo apt install nala -y
 
 #zsh
 sudo nala install zsh zsh-syntax-highlighting autojump zsh-autosuggestions -y
-touch "$HOME/.cache/zshhistory"
+touch "~/.cache/zshhistory"
 #-- Setup Alias in $HOME/zsh/aliasrc
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/,zsh/plugins/powerlevel10k
 echo 'source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc

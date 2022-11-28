@@ -12,7 +12,7 @@ sudo systemctl enable gdm
 
 #zsh
 sudo pacman -S --noconfirm --needed zsh zsh-syntax-highlighting autojump zsh-autosuggestions
-touch "$HOME/.cache/zshhistory"
+touch "~/.cache/zshhistory"
 #-- Setup Alias in $HOME/zsh/aliasrc
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/,zsh/plugins/powerlevel10k
 echo 'source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
