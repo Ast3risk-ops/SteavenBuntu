@@ -17,7 +17,7 @@ yay -S --noconfirm --needed gnome-shell-extension-dash-to-dock gnome-shell-exten
 sudo pacman -S --noconfirm --needed gnome-tweaks
 
 #zsh
-sudo pacman -S --noconfirm --needed zsh zsh-syntax-highlighting autojump zsh-autosuggestions
+yay -S --noconfirm --needed zsh zsh-syntax-highlighting autojump zsh-autosuggestions
 touch "~/.cache/zshhistory"
 #-- Setup Alias in $HOME/zsh/aliasrc
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/,zsh/plugins/powerlevel10k
