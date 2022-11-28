@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Installing yay Aur package helper
+sudo pacman -Syu --noconfirm --needed base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
 # install gnome and gdm3
 sudo pacman -Syu --noconfirm --needed gnome gdm
 
@@ -31,7 +37,7 @@ sudo pacman -Syu --noconfirm --needed papirus-icon-theme
 gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
 
 # Install brave-browser
-sudo pacman -Syu --noconfirm --needed brave-browser
+yay -Syu --noconfirm --needed brave-browser
 
 # remove firefox
 sudo snap remove firefox
