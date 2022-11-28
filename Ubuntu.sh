@@ -8,7 +8,9 @@ sudo apt install nala -y
 sudo nala install zsh zsh-syntax-highlighting autojump zsh-autosuggestions -y
 touch "~/.cache/zshhistory"
 #-- Setup Alias in $HOME/zsh/aliasrc
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/,zsh/plugins/powerlevel10k
+mkdir ~/.zsh
+mkdir ~/.zsh/plugins/
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/powerlevel10k
 echo 'source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 
 # make zsh default
@@ -24,7 +26,7 @@ sudo fc-cache -vf
 rm ./FiraCode.zip ./Meslo.zip
 
 # theme
-sudo git clone https://github.com/EliverLara/Nordic.git /usr/share/themes/
+sudo git clone https://github.com/EliverLara/Nordic.git /usr/share/themes/Nordic
 gsettings set org.gnome.desktop.interface gtk-theme Nordic
 gsettings set org.gnome.desktop.wm.preferences theme Nordic
 
