@@ -10,6 +10,12 @@ makepkg -si
 sudo pacman -S --noconfirm --needed gnome gdm
 sudo systemctl enable gdm
 
+# Gnome Extensions
+yay -S --noconfirm --needed gnome-shell-extension-dash-to-dock gnome-shell-extensions gnome-shell-extension-user-theme-x-git extension-manager
+
+# Gnome Tweaks
+sudo pacman -S --noconfirm --needed gnome-tweaks
+
 #zsh
 sudo pacman -S --noconfirm --needed zsh zsh-syntax-highlighting autojump zsh-autosuggestions
 touch "~/.cache/zshhistory"
