@@ -74,6 +74,11 @@ sudo nala install preload -y
 sudo systemctl enable preload
 sudo systemctl start preload
 
+# github desktop
+wget -qO - https://mirror.mwt.me/ghd/gpgkey | sudo tee /etc/apt/trusted.gpg.d/shiftkey-desktop.asc > /dev/null
+sudo sh -c 'echo "deb [arch=amd64] https://mirror.mwt.me/ghd/deb/ any main" > /etc/apt/sources.list.d/packagecloud-shiftkey-desktop.list'
+sudo nala update
+sudo nala install github-desktop -y
 
 # make english default
 echo "LC_ALL=en_US.UTF-8" | sudo tee -a /etc/environment

@@ -82,6 +82,9 @@ yay -S -noconfirm --needed preload
 sudo systemctl enable preload
 sudo systemctl start preload
 
+# github desktop
+yay -S -noconfirm --needed github-desktop-bin
+
 # make english default
 echo "LC_ALL=en_US.UTF-8" | sudo tee -a /etc/environment
 

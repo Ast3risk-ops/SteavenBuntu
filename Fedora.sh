@@ -86,6 +86,10 @@ sudo dnf copr enable elxreno/preload -y && sudo dnf install preload -y
 sudo systemctl enable preload
 sudo systemctl start preload
 
+# github dekstop
+ sudo rpm --import https://mirror.mwt.me/ghd/gpgkey -y
+ sudo sh -c 'echo -e "[shiftkey]\nname=GitHub Desktop\nbaseurl=https://mirror.mwt.me/ghd/rpm\nenabled=1\ngpgcheck=0\nrepo_gpgcheck=1\ngpgkey=https://mirror.mwt.me/ghd/gpgkey" > /etc/yum.repos.d/shiftkey-desktop.repo' 
+ sudo dnf install github-desktop -y
 # make english default
 echo "LC_ALL=en_US.UTF-8" | sudo tee -a /etc/environment
 
