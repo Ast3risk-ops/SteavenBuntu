@@ -64,6 +64,13 @@ sudo snap remove firefox
 # installing vlc
 sudo pacman -S --noconfirm --needed vlc 
 
+
+# power managment
+sudo pacman -Rns --noconfirm --needed power-profiles-daemon
+yay -S auto-cpufreq --noconfirm --needed
+sudo systemctl enable auto-cpufreq
+sudo systemctl start auto-cpufreq
+
 # make english default
 echo "LC_ALL=en_US.UTF-8" | sudo tee -a /etc/environment
 

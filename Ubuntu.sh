@@ -59,6 +59,11 @@ sudo apt autoremove --purge -y
 # installing vlc
 sudo nala install vlc -y
 
+# power managment
+sudo apt purge -y power-profiles-daemon
+sudo snap install auto-cpufreq
+sudo auto-cpufreq --install
+
 # make english default
 echo "LC_ALL=en_US.UTF-8" | sudo tee -a /etc/environment
 
