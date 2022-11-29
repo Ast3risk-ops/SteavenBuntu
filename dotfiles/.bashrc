@@ -32,3 +32,4 @@ alias rm='rm -i'
 
 # fake vim
 alias vim="nano"
+export PATH=$PATH:/home/omarhanykasban/.spicetify
