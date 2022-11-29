@@ -20,7 +20,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/
 echo 'source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh/plugins/zsh-autocomplete
 echo 'source ~/.zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh' >> ~/.zshrc
-
+echo 'skip_global_compinit=1' >> ~/.zshenv
 
 # make zsh default
 chsh -s $(which zsh)
