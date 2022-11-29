@@ -74,6 +74,9 @@ yay -S auto-cpufreq --noconfirm --needed
 sudo systemctl enable auto-cpufreq
 sudo systemctl start auto-cpufreq
 
+# neofetch
+sudo -S --noconfirm --needed neofetch
+
 # make english default
 echo "LC_ALL=en_US.UTF-8" | sudo tee -a /etc/environment
 
