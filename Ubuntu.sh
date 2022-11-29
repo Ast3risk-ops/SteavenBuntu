@@ -33,6 +33,11 @@ sudo git clone https://github.com/EliverLara/Nordic.git /usr/share/themes/Nordic
 gsettings set org.gnome.desktop.interface gtk-theme Nordic
 gsettings set org.gnome.desktop.wm.preferences theme Nordic
 
+# gtk 4 support
+wget https://github.com/odziom91/libadwaita-themes/raw/main/nordic/nordic-v42.zip
+sudo unzip nordic-v42.zip -d "/root/.config/"
+unzip nordic-v42.zip -d "~/.config/"
+
 # icon theme
 sudo nala install papirus-icon-theme -y
 gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
