@@ -54,10 +54,9 @@ sudo dnf install papirus-icon-theme -y
 gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
 
 # Install brave-browser
-sudo dnf install dnf-transport-https curl -y
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-dnf-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-dnf-release.s3.brave.com/ stable main" | sudo tee /etc/dnf/sources.list.d/brave-browser-release.list
-sudo dnf update
+sudo dnf install dnf-plugins-core -y
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/ -y 
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc -y
 sudo dnf install brave-browser -y
 
 # remove firefox
