@@ -8,8 +8,16 @@ sudo dnf install \
   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 sudo dnf group update core -y
 
+
+# installing git
+sudo dnf install git -y
+
+# enabling flatpak
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 # Gnome Extensions
-sudo dnf install gnome-shell-extension-manager gnome-shell-extensions -y 
+sudo dnf install gnome-shell-extensions -y 
+sudo flatpak install flathub com.mattjakeman.ExtensionManager -y
 
 #zsh
 sudo dnf install zsh zsh-syntax-highlighting autojump zsh-autosuggestions -y
@@ -21,7 +29,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/
 echo 'source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 
 # make zsh default
-sudo chsh -s /bin/zsh omarhanykasban
 chsh -s $(which zsh)
 
 # fonts

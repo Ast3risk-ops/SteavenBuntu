@@ -7,6 +7,9 @@ cd yay
 makepkg -si
 cd ..
 
+# installing git
+sudo pacman -S --noconfirm --needed git
+
 # install gnome and gdm3
 sudo pacman -S --noconfirm --needed gnome gdm
 sudo systemctl enable gdm

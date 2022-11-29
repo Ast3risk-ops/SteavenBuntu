@@ -4,6 +4,9 @@
 # nala
 sudo apt install nala -y
 
+# installing git
+sudo  apt install git -y
+
 # Gnome Extensions
 sudo nala install gnome-shell-extension-manager gnome-shell-extensions -y 
 
@@ -17,7 +20,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/plugins/
 echo 'source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 
 # make zsh default
-sudo chsh -s /bin/zsh omarhanykasban
 chsh -s $(which zsh)
 
 # fonts
