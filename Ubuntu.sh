@@ -4,6 +4,9 @@
 # nala
 sudo apt install nala -y
 
+# Gnome Extensions
+sudo nala install gnome-shell-extension-manager gnome-shell-extensions -y 
+
 #zsh
 sudo nala install zsh zsh-syntax-highlighting autojump zsh-autosuggestions -y
 touch "~/.cache/zshhistory"
