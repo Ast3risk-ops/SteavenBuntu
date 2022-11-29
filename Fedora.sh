@@ -81,6 +81,11 @@ sudo auto-cpufreq --install
 # install neofetch
 sudo dnf install neofetch -y 
 
+# preload
+sudo dnf copr enable elxreno/preload -y && sudo dnf install preload -y
+sudo systemctl enable preload
+sudo systemctl start preload
+
 # make english default
 echo "LC_ALL=en_US.UTF-8" | sudo tee -a /etc/environment
 

@@ -69,6 +69,12 @@ sudo auto-cpufreq --install
 # install neofetch
 sudo nala install neofetch -y
 
+# preload
+sudo nala install preload -y
+sudo systemctl enable preload
+sudo systemctl start preload
+
+
 # make english default
 echo "LC_ALL=en_US.UTF-8" | sudo tee -a /etc/environment
 
