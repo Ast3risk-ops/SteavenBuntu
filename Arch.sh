@@ -78,7 +78,7 @@ sudo systemctl start auto-cpufreq
 sudo pacman -S --noconfirm --needed neofetch
 
 # preload
-yay -S -noconfirm --needed preload
+yay-S --noconfirm --needed  preload
 sudo systemctl enable preload
 sudo systemctl start preload
 
