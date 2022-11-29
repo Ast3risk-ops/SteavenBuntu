@@ -66,7 +66,7 @@ sudo pacman -S --noconfirm --needed vlc
 
 
 # power managment
-sudo pacman -Rns --noconfirm --needed power-profiles-daemon
+sudo pacman -Rns --noconfirm power-profiles-daemon
 yay -S auto-cpufreq --noconfirm --needed
 sudo systemctl enable auto-cpufreq
 sudo systemctl start auto-cpufreq
