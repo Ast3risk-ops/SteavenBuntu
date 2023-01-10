@@ -8,6 +8,9 @@ sudo dnf install \
   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 sudo dnf group update core -y
 
+# install snaps
+sudo dnf install snapd -y
+sudo ln -s /var/lib/snapd/snap /snap
 
 # installing git
 sudo dnf install git -y
@@ -48,8 +51,14 @@ gsettings set org.gnome.desktop.wm.preferences theme Nordic
 
 # gtk 4 support
 wget https://github.com/odziom91/libadwaita-themes/raw/main/nordic/nordic-v42.zip
-sudo unzip nordic-v42.zip -d "/root/.config/"
-unzip nordic-v42.zip -d "~/.config/"
+sudo unzip nordic-v42.zip -d /root/.config/
+unzip nordic-v42.zip -d ~/.config/
+
+# snap theme support
+sudo snap install gtk-theme-nordic --edge
+for i in $(snap connections | grep gtk-common-themes:gtk-3-themes | awk '{print $2}'); do sudo snap connect $i gtk-theme-nordic:gtk-3-themes; done
+for i in $(snap connections | grep gtk-common-themes:gtk-4-themes | awk '{print $2}'); do sudo snap connect $i gtk-theme-nordic:gtk-4-themes; done
+
 
 # icon theme
 sudo dnf install papirus-icon-theme -y
@@ -70,10 +79,6 @@ sudo dnf autoremove --purge -y
 
 # installing vlc
 sudo dnf install vlc -y
-
-# install snaps
-sudo dnf install snapd -y
-sudo ln -s /var/lib/snapd/snap /snap
 
 # power managment
 sudo dnf purge -y power-profiles-daemon
