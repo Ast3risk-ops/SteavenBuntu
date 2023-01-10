@@ -53,8 +53,8 @@ gsettings set org.gnome.desktop.wm.preferences theme Nordic
 
 # gtk 4 support
 wget https://github.com/odziom91/libadwaita-themes/raw/main/nordic/nordic-v42.zip
-sudo unzip nordic-v42.zip -d "/root/.config/"
-unzip nordic-v42.zip -d "~/.config/"
+sudo unzip nordic-v42.zip -d /root/.config/
+unzip nordic-v42.zip -d ~/.config/
 
 # icon theme
 sudo pacman -S --noconfirm --needed papirus-icon-theme
