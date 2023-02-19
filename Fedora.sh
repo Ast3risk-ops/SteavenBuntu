@@ -59,6 +59,9 @@ sudo snap install gtk-theme-nordic --edge
 for i in $(snap connections | grep gtk-common-themes:gtk-3-themes | awk '{print $2}'); do sudo snap connect $i gtk-theme-nordic:gtk-3-themes; done
 for i in $(snap connections | grep gtk-common-themes:gtk-4-themes | awk '{print $2}'); do sudo snap connect $i gtk-theme-nordic:gtk-4-themes; done
 
+# flatpak theme support
+sudo flatpak override --env=GTK_THEME=nordic
+sudo flatpak override --env=ICON_THEME=papirus-dark
 
 # icon theme
 sudo dnf install papirus-icon-theme -y
